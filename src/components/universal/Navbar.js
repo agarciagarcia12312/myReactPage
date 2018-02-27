@@ -75,7 +75,7 @@ export default class Navbar extends React.Component{
           </button>
           <a className="navbar-brand mb-0" id='name2' onClick={this.navHome} >Andy Garcia</a>
 
-          <div className="collapse navbar-collapse" id="navbarSupportedContent" >
+          <div className="collapse navbar-collapse" id="navbarSupportedContent" style ={{backgroundImage: 'url(' + wall + ')'}}>
             <ul className="navbar-nav mr-auto" >
               <li className="nav-item links2" >
                 <a className="nav-link" onClick={this.navAbout}>About <span className="sr-only">(current)</span></a>
