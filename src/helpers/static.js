@@ -45,8 +45,8 @@ module.exports.projects=[
   },{
     name:'Portfolio Page',
     img:'/images/myPage.png',
-    codeLink:'https://agarciagarcia12312.github.io/myPage/',
-    projectLink:'https://agarciagarcia12312.github.io/myPage/',
-    description:"Website that provides information on all the denver neighborhoods"
+    codeLink:'https://github.com/agarciagarcia12312/myReactPage',
+    projectLink:'https://my-react-page.herokuapp.com/',
+    description:"My personal portfolio page made using react hosted on heroku"
   }
 ]

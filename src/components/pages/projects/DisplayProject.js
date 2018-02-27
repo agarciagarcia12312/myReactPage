@@ -29,12 +29,12 @@ export default class DisplayProject extends React.Component{
               {this.props.project.description}
             </p>
             <p className='Psection'>
-              <a href={this.props.project.projectLink}>
+              <a href={this.props.project.projectLink} target="_blank">
                 <span className='linkName'>Project Link</span>
               </a>
             </p>
             <p className='Psection'>
-              <a href={this.props.project.codeLink}>
+              <a href={this.props.project.codeLink} target="_blank">
                 <span className='linkName'>Link to code</span>
               </a>
             </p>
