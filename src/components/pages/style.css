@@ -1,0 +1,136 @@
+/* ================ Intro Page ============ */
+
+#greetingBackground{
+  position:fixed;
+  width:100%;
+  height: 100%;
+}
+.App-logo{
+  margin-top: 2%;
+}
+.tittle{
+  margin-top: 22%;
+  font-size: 7em;
+  position:absolute;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top:10%;
+  color:white;
+}
+
+/* ================ First Page ============ */
+#firstPage{
+  position: fixed;
+  /* background-color: blue; */
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  width: 100%;
+  height:100%;
+}
+
+#joke{
+  color:white;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* top:30%; */
+  font-family: 'Playfair Display', serif;
+
+}
+#joke:hover {
+  cursor: pointer;
+  color:orange;
+}
+/* ================ Summary Page ============ */
+.summary{
+  margin-top: 150px;
+}
+.halfPage{
+  float: left;
+  margin-top: 100px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+}
+#summaryPic{
+  width:350px;
+  height:300px;
+  border-radius: 10px;
+}
+#aboutMe{
+  text-align: left;
+}
+/* ================ connect Page ============ */
+#connectPic{
+  width:300px;
+  height: 300px;
+  border-radius: 150px;
+}
+.connectImgs{
+  width:50px;
+  height: 50px;
+  background-color: none;
+  border-radius: 5px;
+}
+
+.Clinks{
+  text-align: left;
+  margin-top: 30px;
+  /* width:200px; */
+}
+/* ================ project Page ============ */
+.pSection{
+  float:left;
+  padding:2%;
+  position: relative;
+}
+.projects{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  width:250px;
+  height:250px;
+  background-color: blue;
+  margin-top: 15%;
+  background-size: cover;
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat, repeat;
+}
+.projects:hover{
+  cursor: pointer;
+  border: 1px solid green;
+}
+.pTittle {
+  /* font-family: 'Playfair Display', serif; */
+  font-family: 'Nanum Gothic', sans-serif;
+  background-color: white;
+  position: absolute;
+  padding: 15px;
+  opacity:.9;
+  width:100%;
+  border-radius: 10px;
+  bottom: -8px;
+  left:0px;
+}
+/* ================ project Page ============ */
+#projectPage{
+  position: absolute;
+  width:100%;
+  height: 100%;
+
+}
+#mainProjectImg{
+  width:100%;
+  height:auto;
+  /* margin-bottom: 100px; */
+}
+
+.Psection{
+  font-size: 1.2em;
+}
