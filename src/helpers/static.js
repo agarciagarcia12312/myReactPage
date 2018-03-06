@@ -1,3 +1,4 @@
+// file contains all of the static content
 module.exports.contactLinks=[
   {
     name:'github',
@@ -29,24 +30,28 @@ module.exports.projects=[
     img:'/images/tracs.png',
     codeLink:`https://tracs.me/auth`,
     projectLink:'https://tracs.me/auth',
-    description:"SaaS website capable of sending automated email, text, postcards, and ringless voicemails "
+    description:"SaaS website capable of sending automated email, text, postcards, and ringless voicemails ",
+    stack:'node.js, react.js, express.js, MongoDB, Bootstrap'
   },{
     name:'Lets Decide!',
     img:'/images/letsDecide.png',
     codeLink:'https://github.com/agarciagarcia12312/letsDecide',
     projectLink:'https://shielded-fortress-56214.herokuapp.com/',
-    description:"Website that helps users find a place to eat while helping businesses increase traffic during slow hours"
+    description:"Website that helps users find a place to eat while helping businesses increase traffic during slow hours",
+    stack:'node.js, handlebars.js express.js, MongoDb, Bootstrap'
   },{
     name:'Move to Denver',
     img:'/images/moveToDenver.png',
     codeLink:'https://github.com/Maya-Tea/moveToDenver',
     projectLink:'https://maya-tea.github.io/moveToDenver/',
-    description:"Website that provides information on all the denver neighborhoods"
+    description:"Website that provides information on all the denver neighborhoods",
+    stack:'html,javscript, css, jquery'
   },{
     name:'Portfolio Page',
     img:'/images/myPage.png',
     codeLink:'https://github.com/agarciagarcia12312/myReactPage',
     projectLink:'https://my-react-page.herokuapp.com/',
-    description:"My personal portfolio page made using react hosted on heroku"
+    description:"My personal portfolio page made using react hosted on heroku",
+    stack:'react.js, gsap'
   }
 ]

@@ -24,9 +24,13 @@ export default class DisplayProject extends React.Component{
             <img src={this.props.project.img} id='mainProjectImg' alt='Project image'/>
           </div>
           <div className='col-sm-6 halfPage'>
-            <p className='Psection'>
+            <p className='Psection text-left'>
               <strong className='green'>Project description:</strong>
               {this.props.project.description}
+            </p>
+            <p className='Psection text-left'>
+              <strong className='green'>Stack:</strong>
+              {this.props.project.stack}
             </p>
             <p className='Psection'>
               <a href={this.props.project.projectLink} target="_blank">
