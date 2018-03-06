@@ -116,11 +116,16 @@
   position: absolute;
   width:100%;
   height: 100%;
-
+  z-index: -1;
+}
+#pTittleLink:hover{
+  text-decoration: none;
 }
 #mainProjectImg{
   width:100%;
   height:auto;
+  border-radius: 2px;
+  /* border: 1px solid grey; */
   /* margin-bottom: 100px; */
 }
 

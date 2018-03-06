@@ -28,7 +28,7 @@ module.exports.projects=[
   {
     name:'Contact-Tracs',
     img:'/images/tracs.png',
-    codeLink:`https://tracs.me/auth`,
+    codeLink:``,
     projectLink:'https://tracs.me/auth',
     description:"SaaS website capable of sending automated email, text, postcards, and ringless voicemails ",
     stack:'node.js, react.js, express.js, MongoDB, Bootstrap'
@@ -44,7 +44,7 @@ module.exports.projects=[
     img:'/images/moveToDenver.png',
     codeLink:'https://github.com/Maya-Tea/moveToDenver',
     projectLink:'https://maya-tea.github.io/moveToDenver/',
-    description:"Website that provides information on all the denver neighborhoods",
+    description:"Interactive website that provides api feed neighborhood information while suggesting denver neighborhoods that users might like",
     stack:'html,javscript, css, jquery'
   },{
     name:'Portfolio Page',

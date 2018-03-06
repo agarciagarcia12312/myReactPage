@@ -19,7 +19,9 @@ export default class DisplayProject extends React.Component{
       <div ref={c => this.container = c}>
         <div id='projectPage'/>
         <div className='summary'>
-          <h2 className='sectionHeader'>{this.props.project.name}</h2>
+          <a href={this.props.project.projectLink} target="_blank">
+            <div className='sectionHeader' id='pTittleLink'>{this.props.project.name}</div>
+          </a>
           <div className='col-sm-6 halfPage'>
             <img src={this.props.project.img} id='mainProjectImg' alt='Project image'/>
           </div>
@@ -37,11 +39,14 @@ export default class DisplayProject extends React.Component{
                 <span className='linkName'>Project Link</span>
               </a>
             </p>
-            <p className='Psection'>
-              <a href={this.props.project.codeLink} target="_blank">
-                <span className='linkName'>Link to code</span>
-              </a>
-            </p>
+            {this.props.project.codeLink !=='' &&
+              <p className='Psection'>
+                <a href={this.props.project.codeLink} target="_blank">
+                  <span className='linkName'>Link to code</span>
+                </a>
+              </p>
+            }
+
           </div>
         </div>
         <div className='clearBoth'/>
