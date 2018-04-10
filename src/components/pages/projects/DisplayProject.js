@@ -16,11 +16,13 @@ export default class DisplayProject extends React.Component{
   }
   render(){
     return(
-      <div ref={c => this.container = c}>
+      <div ref={c => this.container = c} className='relative'>
         <div id='projectPage'/>
-        <div className='summary'>
+        <span className='xbtn' onClick={this.props.close}>x</span>
+        <div className='summary2'>
           <a href={this.props.project.projectLink} target="_blank">
             <div className='sectionHeader' id='pTittleLink'>{this.props.project.name}</div>
+            <hr className='hideOnDesktop'/>
           </a>
           <div className='col-sm-6 halfPage'>
             <a href={this.props.project.projectLink} target="_blank">

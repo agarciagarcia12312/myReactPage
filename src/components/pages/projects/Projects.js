@@ -11,6 +11,7 @@ export default class Projects extends React.Component{
     this.state ={projectArray:[""],project:'',show:false};
     this.componentWillMount= this.componentWillMount.bind(this);
     this.showProject= this.showProject.bind(this);
+    this.close= this.close.bind(this);
   }
   componentWillMount(){
     let projects = staticInfo.projects;
@@ -30,22 +31,28 @@ export default class Projects extends React.Component{
     console.log(project)
     this.setState({project:project,show:true})
   }
+  close(){
+    this.setState({project:'',show:false})
+  }
   render(){
     return(
       <div ref={c => this.container = c} className='summary'>
         <TransitionGroup>
-          {this.state.show &&
-            <DisplayProject project={this.state.project}/>
+          {this.state.show ?
+            <DisplayProject project={this.state.project} close={this.close}/>
+            :
+            <div>
+              <div className='clearBoth'/>
+              <br/>
+              <h2 className='sectionHeader col-sm-12'>Projects</h2>
+              {this.state.projectArray.map(function(search,i) {
+                return (
+                  <ProjectRender key={i} showProject={this.showProject}  project={search} />
+                );
+              }, this)}
+            </div>
           }
         </TransitionGroup>
-        <div className='clearBoth'/>
-        <br/>
-        <h2 className='sectionHeader col-sm-12'>Projects</h2>
-        {this.state.projectArray.map(function(search,i) {
-          return (
-            <ProjectRender key={i} showProject={this.showProject} project={search} />
-          );
-        }, this)}
       </div>
     );
   }
