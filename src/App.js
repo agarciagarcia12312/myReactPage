@@ -77,7 +77,8 @@ class App extends Component {
           {this.state.intro && <Intro/>}
           {this.state.p1 && <FirstPage getJoke={this.getJoke} joke={this.state.joke}/>}
         </Fader>
-        <div id='generic' style = {{backgroundImage: 'url(' + background + ')'}}></div>
+        <div id='genericPhone' className='hideOnDesktop'/>
+        <div id='generic' className='hideOnPhone' style = {{backgroundImage: 'url(' + background + ')'}}></div>
         <TransitionGroup>
           {this.state.summary && <Summary/> }
           {this.state.connect && <Connect/> }

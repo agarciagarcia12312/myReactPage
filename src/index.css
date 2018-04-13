@@ -56,6 +56,20 @@ body {
   height:100%;
   z-index: -5;
 }
+#genericPhone{
+  position: fixed;
+  background-size: cover;
+  top:0px;
+  left:0px;
+  background-repeat: no-repeat, repeat;
+  background-color: #f2f2f2;
+  width: 100%;
+  height:100%;
+  z-index: -5;
+}
+.hideOnPhone{
+  display: contents;
+}
 .green{
   color:green;
 }
@@ -68,4 +82,9 @@ body {
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 3em;
   /* text-decoration: underline; */
+}
+@media only screen and (max-width: 700px) {
+  .hideOnPhone{
+    display: none;
+  }
 }
