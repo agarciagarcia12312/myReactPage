@@ -47,6 +47,13 @@ module.exports.projects=[
     description:"Interactive website that provides api feed neighborhood information while suggesting denver neighborhoods that users might like",
     stack:'html,javscript, css, jquery'
   },{
+    name:'La Morena Restaurant',
+    img:'/images/lamorena.png',
+    codeLink:'',
+    projectLink:'http://www.lamorenabargrill.com/',
+    description:"Info page for a mexican restaurant lacated in Littleton, Co",
+    stack:'weebly,html'
+  },{
     name:'Portfolio Page',
     img:'/images/myPage.png',
     codeLink:'https://github.com/agarciagarcia12312/myReactPage',
