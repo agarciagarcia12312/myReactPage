@@ -26,13 +26,22 @@ module.exports.summary= {
 
 module.exports.projects=[
   {
-    name:'Contact-Tracs',
-    img:'/images/tracs.png',
-    codeLink:``,
-    projectLink:'https://tracs.me/auth',
-    description:"SaaS website capable of sending automated email, text, postcards, and ringless voicemails ",
-    stack:'node.js, react.js, express.js, MongoDB, Bootstrap'
-  },{
+    name:'Frutix Denver',
+    img:'/images/frutix.PNG',
+    codeLink:`https://github.com/agarciagarcia12312/frutix`,
+    projectLink:'http://frutixdenver.s3-website-us-west-2.amazonaws.com/',
+    description:"Front end website for a local juice bar that specializes on natural and fresh ingredients ",
+    stack:'react.js, Material-ui'
+  },
+  // {
+  //   name:'Contact-Tracs',
+  //   img:'/images/tracs.png',
+  //   codeLink:``,
+  //   projectLink:'https://tracs.me/auth',
+  //   description:"SaaS website capable of sending automated email, text, postcards, and ringless voicemails ",
+  //   stack:'node.js, react.js, express.js, MongoDB, Bootstrap'
+  // },
+  {
     name:'Lets Decide!',
     img:'/images/letsDecide.png',
     codeLink:'https://github.com/agarciagarcia12312/letsDecide',

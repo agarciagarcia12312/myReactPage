@@ -14,13 +14,13 @@ export default class Connect extends React.Component{
   }
   componentWillEnter (callback) {
     const el = this.container;
-    TweenMax.fromTo(el, 0.6, {y: 500, opacity: 0}, {y: 0, opacity: 1, onComplete: callback});
+    TweenMax.fromTo(el, 1.2, {y: 500, opacity: .3}, {y: 0, opacity: 1, onComplete: callback});
   }
 
-  componentWillLeave (callback) {
-    const el = this.container;
-    TweenMax.fromTo(el, 0.3, {y: 0, opacity: 1}, {y: -400, opacity: 0, onComplete: callback});
-  }
+  // componentWillLeave (callback) {
+  //   const el = this.container;
+  //   TweenMax.fromTo(el, 0.2, {y: 0, opacity: 1}, {y: -400, opacity: 0, onComplete: callback});
+  // }
   render(){
     return(
       <div ref={c => this.container = c} className='summary'>

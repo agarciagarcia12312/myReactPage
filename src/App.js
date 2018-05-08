@@ -56,8 +56,6 @@ class App extends Component {
   displayPage(newPage){
     // hide current page show new page
     let current = this.state.currentPage;
-    console.log()
-
     this.setState({[current]:false, [newPage]:true,currentPage:newPage})
   }
   handleChange(event) {
@@ -75,10 +73,10 @@ class App extends Component {
 
         <Fader>
           {this.state.intro && <Intro/>}
-          {this.state.p1 && <FirstPage getJoke={this.getJoke} joke={this.state.joke}/>}
+          {this.state.p1 && <FirstPage getJoke={this.getJoke} joke={this.state.joke} displayPage={this.displayPage}/>}
         </Fader>
-        <div id='genericPhone' className='hideOnDesktop'/>
-        <div id='generic' className='hideOnPhone' style = {{backgroundImage: 'url(' + background + ')'}}></div>
+        <div id='genericPhone' className=''/>
+        {/* <div id='generic' className='hideOnPhone' style = {{backgroundImage: 'url(' + background + ')'}}></div> */}
         <TransitionGroup>
           {this.state.summary && <Summary/> }
           {this.state.connect && <Connect/> }

@@ -95,7 +95,7 @@
   margin-top: 15%;
   background-size: cover;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
   background-repeat: no-repeat, repeat;
 }
 .projects:hover{
@@ -110,9 +110,13 @@
   padding: 15px;
   opacity:.9;
   width:100%;
-  border-radius: 10px;
+  border-radius: 5px;
   bottom: -8px;
   left:0px;
+}
+#pTittle {
+  position: relative;
+  top:-2px;
 }
 /* ================ project Page ============ */
 #projectPage{
@@ -151,7 +155,6 @@
     position: absolute;
     top:0px;
     background-color:rgba(232 , 233, 234,.95);
-
     left:0px;
     z-index: 50;
   }
@@ -178,5 +181,9 @@
     height:auto;
     border-radius: 2px;
   }
-
+}
+@media only screen and (min-width: 700px) {
+  .xbtn:hover{
+    cursor: pointer;
+  }
 }

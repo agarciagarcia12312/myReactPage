@@ -38,10 +38,10 @@ export default class Navbar extends React.Component{
       <div>
         {this.props.currentPage==='p1' ?
         <nav className="navbar fixed-top navbar-toggleable-md " id='nav'>
-          <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" style = {{backgroundImage: 'url(' + menuLogo + ')'}}></span>
           </button>
-          <a className="navbar-brand mb-0" id='name' onClick={this.navHome} >Andy Garcia</a>
+          <a className="navbar-brand mb-0" id='name' onClick={this.navHome} style ={{backgroundImage: 'url(' + tlax + ')'}}>Andy Garcia</a>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent" >
             <ul className="navbar-nav mr-auto linkBackground">
@@ -59,7 +59,7 @@ export default class Navbar extends React.Component{
               {this.state.linkArray.map(function(search,i) {
                 return (
                   <div key={i} className='Nlinks'>
-                    <a href={search.link}>
+                    <a href={search.link} target="_blank">
                     <img src={search.img} alt={search.name} className='connectImgs'/>
                     </a>
                   </div>
@@ -70,7 +70,7 @@ export default class Navbar extends React.Component{
         </nav>
         :
         <nav className="navbar fixed-top navbar-toggleable-md " id='nav2'  style = {{backgroundImage: 'url(' + wall + ')'}}>
-          <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon" id='menuBtn2' style = {{backgroundImage: 'url(' + menuLogo + ')'}}></span>
           </button>
           <a className="navbar-brand mb-0" id='name2' onClick={this.navHome} >Andy Garcia</a>
@@ -91,7 +91,7 @@ export default class Navbar extends React.Component{
               {this.state.linkArray.map(function(search,i) {
                 return (
                   <div key={i} className='Nlinks'>
-                    <a href={search.link}>
+                    <a href={search.link}  target="_blank">
                       <img src={search.img} alt={search.name} className='connectImgs'/>
                     </a>
                   </div>

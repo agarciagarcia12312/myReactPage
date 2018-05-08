@@ -8,10 +8,12 @@
   background-repeat: no-repeat, repeat;
 }
 .navbar-toggler-icon{
-  font-size: 2.5em;
+  font-size: 2.2em;
   color:white;
   position: relative;
-  left:30px;
+  z-index: 10;
+  /* top:5px; */
+  /* left:-10px; */
 }
 .navbar-toggler-icon:hover{
   cursor: pointer;
@@ -24,7 +26,10 @@ font-size: .8em;
 }
 #name {
   color:white;
+  /* position: relative; */
+  /* left: 20px; */
   font-size: 2em;
+  /* z-index: 5; */
 }
 #name:hover{
   cursor: pointer;
@@ -73,10 +78,23 @@ font-size: .8em;
     left: 0;
     z-index: 130;
   }
+  #name{
+    font-size: 1.5em;
+    position: relative;
+    left: 20px;
+  }
+  #name2{
+    font-size: 1.5em;
+    position: relative;
+    left: 20px;
+  }
   .connectImgs{
     margin-left: 40px;
   }
   .collapse{
+    position: absolute;
+    left:0;
+    width:100%;
     background-image: url('../../images/tlaxcala.jpg');
   }
 }

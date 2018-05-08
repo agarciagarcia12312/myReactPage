@@ -19,16 +19,16 @@ export default class Projects extends React.Component{
   }
   componentWillEnter (callback) {
     const el = this.container;
-    TweenMax.fromTo(el, 0.6, {y: 500, opacity: 0}, {y: 0, opacity: 1, onComplete: callback});
+    TweenMax.fromTo(el, 1.5, {y: 500, opacity: .2}, {y: 0, opacity: 1, onComplete: callback});
   }
 
-  componentWillLeave (callback) {
-    const el = this.container;
-    TweenMax.fromTo(el, 0.3, {y: 0, opacity: 1}, {y: -400, opacity: 0, onComplete: callback});
-  }
+  // componentWillLeave (callback) {
+  //   const el = this.container;
+  //   TweenMax.fromTo(el, 0.2, {y: 0, opacity: 1}, {y: -400, opacity: 0, onComplete: callback});
+  // }
   showProject(project){
     // ev.preventDefault();
-    console.log(project)
+    // console.log(project)
     this.setState({project:project,show:true})
   }
   close(){
@@ -37,14 +37,18 @@ export default class Projects extends React.Component{
   render(){
     return(
       <div ref={c => this.container = c} className='summary'>
+        {/* <h2 className='sectionHeader'>Projects</h2> */}
+        {!this.state.show &&
+          <h2 className='sectionHeader' id='pTittle'>Projects</h2>
+        }
         <TransitionGroup>
           {this.state.show ?
             <DisplayProject project={this.state.project} close={this.close}/>
             :
-            <div>
-              <div className='clearBoth'/>
-              <br/>
-              <h2 className='sectionHeader col-sm-12'>Projects</h2>
+            <div >
+              {/* <div className='clearBoth'/> */}
+              {/* <br/> */}
+              {/* <h2 className='sectionHeader'>Projects</h2> */}
               {this.state.projectArray.map(function(search,i) {
                 return (
                   <ProjectRender key={i} showProject={this.showProject}  project={search} />
