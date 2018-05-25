@@ -45,7 +45,7 @@ module.exports.projects=[
     name:'Lets Decide!',
     img:'/images/letsDecide.png',
     codeLink:'https://github.com/agarciagarcia12312/letsDecide',
-    projectLink:'https://shielded-fortress-56214.herokuapp.com/',
+    projectLink:'http://frutixdenver.com/',
     description:"Website that helps users find a place to eat while helping businesses increase traffic during slow hours",
     stack:'node.js, handlebars.js express.js, MongoDb, Bootstrap'
   },{
