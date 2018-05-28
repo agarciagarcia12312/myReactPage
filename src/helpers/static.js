@@ -29,7 +29,7 @@ module.exports.projects=[
     name:'Frutix Denver',
     img:'/images/frutix.PNG',
     codeLink:`https://github.com/agarciagarcia12312/frutix`,
-    projectLink:'http://frutixdenver.s3-website-us-west-2.amazonaws.com/',
+    projectLink:'http://frutixdenver.com/',
     description:"Front end website for a local juice bar that specializes on natural and fresh ingredients ",
     stack:'react.js, Material-ui'
   },
@@ -45,7 +45,7 @@ module.exports.projects=[
     name:'Lets Decide!',
     img:'/images/letsDecide.png',
     codeLink:'https://github.com/agarciagarcia12312/letsDecide',
-    projectLink:'http://frutixdenver.com/',
+    projectLink:'https://shielded-fortress-56214.herokuapp.com/',
     description:"Website that helps users find a place to eat while helping businesses increase traffic during slow hours",
     stack:'node.js, handlebars.js express.js, MongoDb, Bootstrap'
   },{
